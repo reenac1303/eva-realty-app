@@ -59,7 +59,7 @@ export default function HomeLayout({
                       alt="Reena Chaudhary" 
                       className="w-full h-full object-cover"
                       onError={(e) => {
-                        e.target.src = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=100";
+                        e.target.src = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80";
                       }}
                     />
                   </div>
