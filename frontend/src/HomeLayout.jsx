@@ -53,16 +53,17 @@ export default function HomeLayout({
                 </div>
 
                 <div className="flex-shrink-0">
-                  <div className="relative w-80 h-80 sm:w-96 sm:h-96 rounded-3xl overflow-hidden shadow-2xl bg-slate-800">
-                    <img 
-                      src="/profile-dark.png" 
-                      alt="Reena Chaudhary" 
-                      className="w-full h-full object-cover"
-                      onError={(e) => {
-                        e.target.src = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80";
-                      }}
-                    />
-                  </div>
+                 <div className="relative w-80 h-80 sm:w-96 sm:h-96 rounded-3xl overflow-hidden shadow-2xl bg-slate-800 flex items-center justify-center">
+    <img 
+      src="/profile-dark.png" 
+      alt="Reena Chaudhary" 
+      {/* Changed object-cover to object-contain */}
+      className="w-full h-full object-contain"
+      onError={(e) => {
+        e.target.src = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80";
+      }}
+    />
+  </div>
                 </div>
               </div>
             </div>
