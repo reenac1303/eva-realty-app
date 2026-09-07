@@ -20,12 +20,11 @@ export default function AboutUs({ setActiveTab }) {
       {/* Bio Grid */}
       <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center bg-white p-8 sm:p-12 rounded-3xl border-4 border-indigo-200 shadow-xl">
         <div className="md:col-span-5">
-          {/* Changed from fixed h-80/h-96 to aspect-[3/4] and added object-top */}
-          <div className="relative w-full aspect-[3/4] rounded-2xl overflow-hidden shadow-lg bg-slate-100">
+          <div className="relative h-80 sm:h-96 rounded-2xl overflow-hidden shadow-lg bg-slate-100 flex items-center justify-center">
             <img 
               src="/profile-light.png" 
               alt="Reena Chaudhary" 
-              className="w-full h-full object-cover object-top"
+              className="w-full h-full object-cover object-top scale-95"
               onError={(e) => {
                 e.target.src = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80";
               }}
