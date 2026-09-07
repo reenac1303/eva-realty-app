@@ -8,7 +8,7 @@ export default function HomeLayout({
   return (
     <div className="min-h-screen bg-[#FAFAFB] text-slate-900">
       {activeTab === 'Home' && (
-        <div className="space-y-12 pb-16">
+        <div className="space-y-8 pb-12">
           
           {/* 1. Hero Section with Luxury DFW Background */}
           <div className="relative bg-slate-900 text-white overflow-hidden">
@@ -21,8 +21,7 @@ export default function HomeLayout({
               <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-900/70 to-slate-900/40"></div>
             </div>
 
-            {/* Reduced pt-20 pb-16 to pt-12 pb-10 to make the hero section less tall/wide */}
-            <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-10">
+            <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-10">
               <div className="flex flex-col md:flex-row items-center justify-between gap-12">
                 <div className="text-center md:text-left max-w-xl">
                   <span className="bg-indigo-500/30 border border-indigo-400/40 text-indigo-200 text-xs font-semibold uppercase tracking-[0.2em] px-4 py-1.5 rounded-full mb-6 inline-block shadow-md backdrop-blur-xs">
@@ -70,7 +69,7 @@ export default function HomeLayout({
           </div>
 
           {/* 2. Stats Bar */}
-          <div className="border-y border-slate-200/80 bg-white py-8 shadow-xs">
+          <div className="border-y border-slate-200/80 bg-white py-6 shadow-xs">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                 <div className="p-2">
@@ -94,7 +93,7 @@ export default function HomeLayout({
           </div>
 
           {/* 3. Introduction / Advisor Teaser */}
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-2">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="bg-white rounded-3xl border-4 border-indigo-200 p-8 sm:p-10 shadow-xl flex flex-col md:flex-row items-center justify-between gap-8">
               <div className="max-w-2xl">
                 <span className="text-indigo-600 bg-indigo-50 border border-indigo-100 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-[0.2em] mb-3 inline-block">
@@ -117,8 +116,8 @@ export default function HomeLayout({
           </div>
 
           {/* 4. Prime DFW Communities */}
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4">
-            <div className="text-center max-w-2xl mx-auto mb-10">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-2">
+            <div className="text-center max-w-2xl mx-auto mb-8">
               <span className="text-indigo-600 bg-indigo-50 border border-indigo-100 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-[0.2em] mb-3 inline-block">
                 Local Specialization
               </span>
