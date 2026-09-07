@@ -21,7 +21,8 @@ export default function HomeLayout({
               <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-900/70 to-slate-900/40"></div>
             </div>
 
-            <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16">
+            {/* Reduced pt-20 pb-16 to pt-12 pb-10 to make the hero section less tall/wide */}
+            <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-10">
               <div className="flex flex-col md:flex-row items-center justify-between gap-12">
                 <div className="text-center md:text-left max-w-xl">
                   <span className="bg-indigo-500/30 border border-indigo-400/40 text-indigo-200 text-xs font-semibold uppercase tracking-[0.2em] px-4 py-1.5 rounded-full mb-6 inline-block shadow-md backdrop-blur-xs">
@@ -32,7 +33,7 @@ export default function HomeLayout({
                     <span className="text-indigo-400">Expert Guidance.</span>
                   </h1>
                   <p className="mt-6 text-lg text-slate-200 leading-relaxed drop-shadow">
-                    Navigating luxury buying, selling, and market valuation across Frisco, Plano, McKinney, Prosper, Allen, Celina, and the greater DFW metroplex[cite: 4].
+                    Navigating luxury buying, selling, and market valuation across Frisco, Plano, McKinney, Prosper, Allen, Celina, and the greater DFW metroplex.
                   </p>
                   <div className="mt-8 flex flex-wrap justify-center md:justify-start gap-4">
                     <button
@@ -53,16 +54,16 @@ export default function HomeLayout({
                 </div>
 
                 <div className="flex-shrink-0">
-               <div className="relative w-72 sm:w-80 aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl flex items-center justify-center">
-    <img 
-      src="/profile-dark.png" 
-      alt="Reena Chaudhary" 
-      className="w-full h-full object-contain"
-      onError={(e) => {
-        e.target.src = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80";
-      }}
-    />
-  </div>
+                  <div className="relative w-64 sm:w-72 aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl flex items-center justify-center">
+                    <img 
+                      src="/profile-dark.png" 
+                      alt="Reena Chaudhary" 
+                      className="w-full h-full object-contain"
+                      onError={(e) => {
+                        e.target.src = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80";
+                      }}
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -103,7 +104,7 @@ export default function HomeLayout({
                   A seamless real estate experience tailored to your goals.
                 </h3>
                 <p className="mt-3 text-slate-600 text-sm sm:text-base leading-relaxed">
-                  Whether you are buying your dream family home, selling a luxury property through Eva Realty One, or looking for accurate investment valuations backed by eXp Realty, Reena Chaudhary delivers uncompromised expertise[cite: 4].
+                  Whether you are buying your dream family home, selling a luxury property through Eva Realty One, or looking for accurate investment valuations backed by eXp Realty, Reena Chaudhary delivers uncompromised expertise.
                 </p>
               </div>
               <button
