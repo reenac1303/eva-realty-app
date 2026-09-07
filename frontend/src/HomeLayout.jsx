@@ -53,7 +53,7 @@ export default function HomeLayout({
                 </div>
 
                 <div className="flex-shrink-0">
-                 <div className="relative w-80 h-80 sm:w-96 sm:h-96 rounded-3xl overflow-hidden shadow-2xl bg-slate-800 flex items-center justify-center p-4 sm:p-6">
+                <div className="relative w-72 sm:w-80 aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl bg-slate-800 flex items-center justify-center p-3">
                     <img 
                       src="/profile-dark.png" 
                       alt="Reena Chaudhary" 
